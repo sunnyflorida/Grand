@@ -67,7 +67,7 @@
     color: #fff;
     background-color: rgb(115,115,115);   
 }
-<<<<<<< HEAD
+
 .jcarousel1-control-prev img {
     position: absolute;
     top: 40%;
@@ -78,9 +78,7 @@
     top: 40%;
     left: 7px;
 }
-=======
 
->>>>>>> 896a34d3cd46f3f1fecbb052d368ffb2ef3369a5
 
 
 /*carusel onmain page BRANDS*/
@@ -216,15 +214,13 @@
     text-decoration: none;
     font-size: 40px;
 }
-<<<<<<< HEAD
+
 .jcarousel_p-control-prev img,
 .jcarousel_p-control-next img {
     position: absolute;
     top: 18px;
 }
-=======
 
->>>>>>> 896a34d3cd46f3f1fecbb052d368ffb2ef3369a5
 .jcarousel_p-control-prev {
     left: -20px;
 }
