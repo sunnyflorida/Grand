@@ -28,7 +28,7 @@
         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 text-right">
           <address class="address">
             <p><strong>Адрес:</strong> <b>ТЦ "Grad", 3-й этаж, пав. 367</b></p>
-            <p><a href="where_to_buy.html">Карта проезда</a></p>
+            <p><a href="#mapmodals" data-toggle="modal" role="button">Карта проезда</a> </p>
             <p><strong>Время работы:</strong> 10.00 - 17.00</p>
             <p><strong>Выходной</strong>: понедельник</p>
           </address>
@@ -125,13 +125,32 @@
     </div> <!-- end wrapper -->
   </div><!--  end container -->
 
+
+<!-- Modal with the map-->
+  <div class="modal fade" id="mapmodals">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div id="map-container"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="close" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
 <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 </body>
 </html>
