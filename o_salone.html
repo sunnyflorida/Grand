@@ -7,15 +7,19 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet">
   <script type="text/javascript" src="js/html5shiv.js"></script>
   <script type="text/javascript" src="js/html5shiv-printshiv.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+  <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
 </head>
 <body>
   <div class="container">
     <header>
       <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
           <a href="index.html">
             <div class="logo_container">
               <div class="first_logo pull-left">
@@ -27,15 +31,15 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 text-right">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
           <address class="address">
             <p><strong>Адрес:</strong> <b>ТЦ "Grad", 3-й этаж, пав. 367</b></p>
-            <p><a type="button" class="link_schema" data-toggle="modal" data-target="#MapScheme">Схема проезда</a> </p>
+            <p><a href="img/schema.jpg" class="fancy_picture" rel="schema" title="Как  нас найти">Схема этажа</a></p>
             <p><strong>Время работы:</strong> 10.00 - 17.00</p>
             <p><strong>Выходной</strong>: понедельник</p>
           </address>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
           <address class="phones_block">
             <p>Телефон / факс:</p>
             <p><a href="tel:+375172596461">+375 (17) 259-64-61</a></p>
@@ -63,9 +67,11 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Каталог <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="kitchens.html">Кухни</a></li>
+                   <li><a href="kitchens.html">Кухни</a></li>
                   <li><a href="tables.html">Столовые группы</a></li>
-                  <li><a href="items.html">Комплектующие</a></li>
+                  <li><a href="table_ups.html">Комплектующие</a></li>
+                  <li><a href="discounts.html">Акции</a></li>
+                  <li><a href="onsale.html">Распродажа образцов</a></li>
                 </ul>
               </li>
               <li class="dropdown active">
@@ -85,7 +91,7 @@
         </div><!-- /.container-fluid -->
       </nav>
 
-      <section>
+      <section class="page_o_salone">
         <ol class="breadcrumb">
           <li><a href="index.html">Главная</a></li>
           <li class="active"><span>О салоне</span></li>
@@ -94,49 +100,53 @@
         <article class="o_salone_article">
           <div class="article_img_wrapper"><img src="img/grand.png"></div>
           <h1>Салон-студия "Гранд"</h1>
-          <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illm iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-          <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+          <p>Салон-студия кухонной мебели «Гранд» работает более 10 лет.</p>
+          <p>Мы являемся официальными дилерами фабрики «ГеосИдеал».</p>
+          <p>Наши кухни ориентированы на потребителей ценящих яркий эмоциональный законченный  образ, гармонию дизайнерской мысли и практичную функциональность.</p>
+          <p>Фабрика «ГеосИдеал» создает кухни европейского уровня по цене существенно дешевле мировых брендов. Это позволяет нашим покупателям воплощать свою мечту в кухонном гарнитуре из европейских комплектующих, выполненном по передовым технологиям в области дизайна и функционального наполнения.</p>
+          <p>Дизайнеры нашего салона создадут проект для помещений любых размеров и конфигураций, а разнообразие модулей, из которых  формируются  гарнитуры, и стилевых  решений настолько велико, что позволяет воплотить в жизни самые смелые дизайнерские идеи.</p>
+          <p>Качество кухни, как и качество блюда, определяется качеством ингредиентов.</p>
         </article>
 
         <div class="gallery row">
           <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
             <div class="img_gallery_wrapper">
-              <a href="img/slide1.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/slide1.jpg"></a>
+              <a href="img/o_salone1.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/o_salone1.jpg"></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
             <div class="img_gallery_wrapper">
-               <a href="img/slide2.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/slide2.jpg"></a>
+              <a href="img/o_salone2.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/o_salone2.jpg"></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
             <div class="img_gallery_wrapper">
-              <a href="img/slide1.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/slide1.jpg"></a>
+              <a href="img/o_salone3.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/o_salone3.jpg"></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
             <div class="img_gallery_wrapper">
-               <a href="img/slide2.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/slide2.jpg"></a>
+              <a href="img/o_salone4.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/o_salone4.jpg"></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
             <div class="img_gallery_wrapper">
-               <a href="img/slide2.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/slide2.jpg"></a>
+              <a href="img/o_salone5.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/o_salone5.jpg"></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
             <div class="img_gallery_wrapper">
-              <a href="img/slide1.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/slide1.jpg"></a>
+              <a href="img/o_salone6.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/o_salone6.jpg"></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
             <div class="img_gallery_wrapper">
-               <a href="img/slide2.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/slide2.jpg"></a>
+              <a href="img/o_salone7.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/o_salone7.jpg"></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
             <div class="img_gallery_wrapper">
-               <a href="img/slide1.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/slide1.jpg"></a>
+              <a href="img/o_salone8.jpg" class="fancy_picture" rel="gallery" title="Sample title 1"><img src="img/o_salone8.jpg"></a>
             </div>
           </div>
         </div> <!-- end gallery row -->
@@ -149,7 +159,7 @@
                 <p><strong>Адрес: </strong>ТЦ "Grad", 3-й этаж, пав. 367</p>
                 <p class="links">
                   <a href="#mapmodals" data-toggle="modal" role="button">На карте</a> 
-                  <a type="button" class="btn btn-default" data-toggle="modal" data-target="#MapScheme">Схема проезда</a>
+                  <a href="img/schema.jpg" class="fancy_picture" rel="schema" title="Как  нас найти">Схема этажа</a>
                 </p>
                 <p class="time"><strong>Время работы:</strong> 10.00 - 17.00</p>
                 <p class="weekend"><strong>Выходной</strong>: понедельник</p>
@@ -158,7 +168,7 @@
               </address>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
-              <div class="image_wrapper_document"><a class="fancy_doc" rel="doc" href="img/document.jpg"><img src="img/document.jpg"></a></div>
+              <div class="image_wrapper_document"><a class="fancy_doc" rel="doc" href="img/document.jpeg"><img src="img/document.jpeg"></a></div>
             </div>
           </div>
         </article>
@@ -199,7 +209,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12 text-right our_logo">
-            <p>&reg веб-студия <a href="http://intellectit.by/">"Интеллект АйТи"</a></p>
+            <p> <small>Создание сайта:</small><span>&reg веб-студия <a href="http://intellectit.by/">"Интеллект АйТи"</a></span></p>
           </div>
         </div>
       </footer>
@@ -207,16 +217,6 @@
   </div><!--  end container -->
 
 
-
-<!-- Modal with the path -->
-<div class="modal fade" id="MapScheme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-      <img src="img/slide2.jpg">
-    </div>
-  </div>
-</div>
 
 <!-- Modal with the map-->
   <div class="modal fade" id="mapmodals">

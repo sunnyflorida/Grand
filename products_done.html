@@ -7,15 +7,19 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet">
   <script type="text/javascript" src="js/html5shiv.js"></script>
   <script type="text/javascript" src="js/html5shiv-printshiv.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+  <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
 </head>
 <body>
   <div class="container">
     <header>
       <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
           <a href="index.html">
             <div class="logo_container">
               <div class="first_logo pull-left">
@@ -27,15 +31,15 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 text-right">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
           <address class="address">
             <p><strong>Адрес:</strong> <b>ТЦ "Grad", 3-й этаж, пав. 367</b></p>
-            <p><a type="button" class="link_schema" data-toggle="modal" data-target="#MapScheme">Схема проезда</a> </p>
+            <p><a href="img/schema.jpg" class="fancy_picture" rel="schema" title="Как  нас найти">Схема этажа</a></p>
             <p><strong>Время работы:</strong> 10.00 - 17.00</p>
             <p><strong>Выходной</strong>: понедельник</p>
           </address>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
           <address class="phones_block">
             <p>Телефон / факс:</p>
             <p><a href="tel:+375172596461">+375 (17) 259-64-61</a></p>
@@ -59,13 +63,15 @@
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Главная</a></li>
+              <li><a href="index.html">Главная</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Каталог <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="kitchens.html">Кухни</a></li>
+                   <li><a href="kitchens.html">Кухни</a></li>
                   <li><a href="tables.html">Столовые группы</a></li>
-                  <li><a href="items.html">Комплектующие</a></li>
+                  <li><a href="table_ups.html">Комплектующие</a></li>
+                  <li><a href="discounts.html">Акции</a></li>
+                  <li><a href="onsale.html">Распродажа образцов</a></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -77,7 +83,7 @@
                   <li><a href="otzyvy.html">Отзывы</a></li>
                 </ul>
               </li>
-              <li><a href="products_done.html">Готовые работы</a></li>
+              <li  class="active"><a href="products_done.html">Готовые работы</a></li>
               <li><a href="where_to_buy.html">Где купить?</a></li>
               <li><a href="questons.html">Вопросы</a></li>
             </ul>
@@ -85,6 +91,69 @@
         </div><!-- /.container-fluid -->
       </nav>
 
+
+      <section class="pdoducts_done_main_page">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Главная</a></li>
+              <li class="active"><span>Готовые работы</span></li>
+            </ol>
+
+            <div class="row products_done">
+              <div class="col-lg-4 col-md-4 col-sm-4 one_project">
+                <a href="one_album.html">
+                  <figure>
+                    <div class="img_wraper_products_done">
+                      <img src="img/min_slider.jpg">
+                    </div>
+                    <figcaption>
+                      <h4>Коллекция весенняя</h4>
+                    </figcaption>
+                  </figure>
+                <a>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4 one_project">
+                <a href="one_album.html">
+                  <figure>
+                    <div class="img_wraper_products_done">
+                      <img src="img/min_slider.jpg">
+                    </div>
+                    <figcaption>
+                      <h4>Коллекция юбилейная</h4>
+                    </figcaption>
+                  </figure>
+                <a>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4 one_project">
+                <a href="one_album.html">
+                  <figure>
+                    <div class="img_wraper_products_done">
+                      <img src="img/min_slider.jpg">
+                    </div>
+                    <figcaption>
+                      <h4>Коллекция летняя</h4>
+                    </figcaption>
+                  </figure>
+                <a>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4 one_project">
+                <a href="one_album.html">
+                  <figure>
+                    <div class="img_wraper_products_done">
+                      <img src="img/min_slider.jpg">
+                    </div>
+                    <figcaption>
+                      <h4>Коллекция праздничная</h4>
+                    </figcaption>
+                  </figure>
+                <a>
+              </div>
+
+               
+            </div> <!-- end products_done-->
+      </section>
       
       <footer>
         <div class="row footer_main_info">
@@ -120,7 +189,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12 text-right our_logo">
-            <p>&reg веб-студия <a href="http://intellectit.by/">"Интеллект АйТи"</a></p>
+            <p> <small>Создание сайта:</small><span>&reg веб-студия <a href="http://intellectit.by/">"Интеллект АйТи"</a></span></p>
           </div>
         </div>
       </footer>
@@ -140,10 +209,24 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
 <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script> -->
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+<link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

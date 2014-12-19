@@ -1,5 +1,5 @@
  $(document).ready(function(){ 
-    $(".list_nav").hide();
+    // $(".list_nav").hide();
     $(".btn_catalog").on('click', function(){
       $(this).parent().children('div').toggle(); 
       $(this).children('span').children('img').toggleClass('caret_upside_down');
@@ -25,7 +25,12 @@
       var src = $(this).children('img').attr('src');
       $(".product_item_big_wrapper").children('img').attr('src',src);   
       }
-  ); 
+  );
+
+  $(".answer").on('click', function(){
+        $(this).parent().children(".hidden_answer").toggle();
+        event.preventDefault();
+    }); 
 
 // MAP
     var var_map;
@@ -82,28 +87,15 @@
 
 $(document).ready(function() {
   $("a.fancy_picture").fancybox({           
-    fitToView: false, // avoids scaling the image to fit in the viewport
-    beforeShow: function () {
-        // set size to (fancybox) img
-        $(".fancybox-image").css({
-            "width": 700,
-            "height": 500
-        });
-        // set size for parent container
-        this.width = 700;
-        this.height = 500;}        
+          
     });
-  $("a.fancy_doc").fancybox({           
-    fitToView: false, // avoids scaling the image to fit in the viewport
-    beforeShow: function () {
-        // set size to (fancybox) img
-        $(".fancybox-image").css({
-            "width": 400,
-            "height": 600
-        });
-        // set size for parent container
-        this.width = 400;
-        this.height = 600;}        
+  $("a.fancy_doc").fancybox({                 
+    });
+
+  $("a.fancy_prod").fancybox({           
+    });
+  
+   $("a.fancy_doc2").fancybox({           
     });
   
 });
