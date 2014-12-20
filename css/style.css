@@ -262,61 +262,6 @@ header .address p:first-child b {
 	right: 20px;
 	opacity: 1;
 }
-.carousel.slide .carousel-caption  {
-	position: absolute;
-	top: 0;
-	right: 0%;
-	left: 60%;
-	float: right;
-	font-family: MyriadBold;
-	padding: 0;
-}
-.carousel.slide .carousel-caption .caption_block {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	
-}
-.carousel.slide .carousel-caption .caption_up_block {
-	background-color: rgb(237,27,36);
-	text-transform: uppercase;
-	padding-top: 10px;
-}
-.caption_up_block h1 {
-	font-size: 80px;
-	font-family: MyriadSuperBold;
-	margin: 0;
-}
-.caption_up_block h2 {
-	font-size: 56px;
-	padding-right: 30px;
-	margin: 0;
-}
-.caption_down_block {
-	background-color: rgba(255,255,255,0.6);
-}
-.caption_down_block p {
-	color: rgb(16,16,16);
-	font-size: 22px;
-	font-family: MyriadLight;
-	text-transform: uppercase;
-	text-shadow: 0 0 1px #000;
-}
-.caption_down_block p b {
-	font-family: MyriadRegular;
-}
-.caption_down_block p.big_discounts {
-	font-size: 48px;
-	color: rgb(237,27,36);
-	text-shadow: -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff;
-	font-family: MyriadBold;
-}
-.caption_down_block p.big_discounts strong {
-	font-size: 1.3em;
-	font-family: MyriadSuperBold;
-}
-
 
 .well.our_advantages,
 .well.projects_done {
@@ -327,6 +272,13 @@ header .address p:first-child b {
 }
 .well.projects_done a {
 	color: rgb(72,71,67);
+	transition: all 0.3s linear;
+}
+.well.projects_done a:hover {
+	text-decoration: none;
+	color: red;
+}
+.well.projects_done a:hover h2 {
 }
 .well.our_advantages h2 {
 	color: rgb(72,71,67);
@@ -366,7 +318,7 @@ header .address p:first-child b {
 .well.our_advantages figcaption span {
 	font-size: 1.2em;
 	color: rgb(213,202,112);
-	transition: all 0.4s linear;
+	transition: all 0.3s linear;
 }
 .image_wrapper_main_page:hover + figcaption span {
 	color: red;
@@ -399,7 +351,14 @@ header .address p:first-child b {
 
 .well.main_page_brands a {
 	color: rgb(72,71,67);
+	transition: all 0.3s linear;
 }
+.well.main_page_brands a:hover {
+	text-decoration: none;
+	color: red;
+}
+
+
 
 @media screen and (max-width: 769px) {
 	.well.main_page_brands {
@@ -680,6 +639,7 @@ header .address p:first-child b {
 .aside_navigation .catalog_list .list-item.active a {
 	background-color: rgb(213,202,112);
 	font-family: MyriadBold;
+	display: inline;
 }
 .aside_navigation .btn_catalog.discounts {
 	background-color: rgb(209,39,39);
@@ -1002,7 +962,7 @@ header .address p:first-child b {
 	text-align: justify;
 }
 .brands_descr_page article {
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 }
 .brands_descr_page p {
 	margin-bottom: 7px;
@@ -1017,6 +977,7 @@ header .address p:first-child b {
 	overflow: hidden;
 	margin-bottom: 20px;
 	text-align: justify;
+	float: left;
 }
 .brand_img_wrapper img {
 	width: 70%;
